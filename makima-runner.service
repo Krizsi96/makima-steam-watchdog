@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitor the status of Steam to start/stop
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/makima-runner.sh
+
+[Install]
+WantedBy=multi-user.target
